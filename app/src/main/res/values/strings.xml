@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">ORDER Managemen System</string>
+
+    <string name="message_permission_rationale">授予下列权限以继续程序:\n\n%1$s</string>
+    <string name="message_overlay_failed">您的电话不允许我们使用其他应用程序.</string>
+    <string name="message_permission_always_failed">我们需要以下权限，请在设置中为我们开启：\n\n%1$s</string>
+    <string name="message_permission_always_failed1">我们需要以下权限，请在设置中为我们开启</string>
+    <string name="setting" translatable="false">设置</string>
+    <string name="resume" translatable="false">重试</string>
+    <string name="cancel" translatable="false">取消</string>
+    <string name="out" translatable="false">退出账号</string>
+
+    <string name="error_phone" translatable="false">手机号码格式错误</string>
+    <string name="error_phone1" translatable="false">手机号码或验证码为空</string>
+    <string name="error_" translatable="false">请输入完整</string>
+    <string name="error_pwd_length" translatable="false">密码位于6~16位</string>
+    <string name="please_phone" translatable="false">请输入手机号码</string>
+    <string name="please_code" translatable="false">请输入短信验证码</string>
+    <string name="please_pwd1" translatable="false">请再次输入密码</string>
+    <string name="please_pwd2" translatable="false">两次密码不一致</string>
+    <string name="please_pwd3" translatable="false">请输入密码</string>
+    <string name="error_1" translatable="false">请阅读协议</string>
+    <string name="sure" translatable="false">完成</string>
+    <string name="del" translatable="false">删除</string>
+
+    <string name="login" translatable="false">登录</string>
+    <string name="forget_the_password" translatable="false">忘记密码</string>
+    <string name="register" translatable="false">注册</string>
+
+    <string name="order_num" translatable="false">本月订单数量</string>
+    <string name="order" translatable="false">单</string>
+    <string name="sales_amount_this_month" translatable="false">本月销售金额（K）</string>
+    <string name="purchase_cost" translatable="false">本⽉采购成本（K）</string>
+    <string name="cost_rate" translatable="false">本⽉总成本率（K）</string>
+    <string name="order_progress" translatable="false">进行中的订单</string>
+    
+    <string name="order_number" translatable="false">订单编号</string>
+    <string name="creation_date" translatable="false">创建日期</string>
+    <string name="founder" translatable="false">创建人</string>
+    <string name="user" translatable="false">客户</string>
+    <string name="user_phone" translatable="false">客户电话</string>
+    <string name="user_address" translatable="false">客户地址</string>
+    <string name="supplier" translatable="false">供应商</string>
+    <string name="supplier_phone" translatable="false">供应商电话</string>
+    <string name="supplier_name" translatable="false">供应商名称</string>
+    <string name="supplier_address" translatable="false">供应商地址</string>
+    <string name="supplier_num" translatable="false">供应商编号</string>
+    <string name="add_supplier" translatable="false">添加供应商</string>
+    <string name="supplier_category" translatable="false">供应商类别</string>
+    <string name="supply_category" translatable="false">供应类别</string>
+    <string name="purchase" translatable="false">采购成本</string>
+    <string name="sales_amount" translatable="false">销售金额</string>
+    <string name="data_update_date" translatable="false">数据更新日期</string>
+    <string name="state" translatable="false">状态</string>
+
+    <string name="purchasing_customers" translatable="false">采购客户</string>
+    <string name="lump_sum" translatable="false">总金额</string>
+    <string name="profit" translatable="false">利润</string>
+    <string name="estimated_delivery_date" translatable="false">预计收货日期</string>
+    <string name="actual_date_of_receipt" translatable="false">实际收货日期</string>
+    <string name="estimated_delivery_date1" translatable="false">预计送货日期</string>
+    <string name="actual_delivery_date" translatable="false">实际送货日期</string>
+    <string name="choose" translatable="false">请选择</string>
+    <string name="enter" translatable="false">请输入</string>
+    <string name="order_list" translatable="false">订单列表</string>
+    <string name="harvest_date" translatable="false">收货日期</string>
+    <string name="shipping_date" translatable="false">出货日期</string>
+    <string name="create_order" translatable="false">创建订单</string>
+
+    <string name="product_number" translatable="false">商品编号</string>
+    <string name="add_product_number" translatable="false">添加商品编号</string>
+    <string name="prize_name" translatable="false">商品名称</string>
+    <string name="prize_desc" translatable="false">商品详情</string>
+    <string name="unit_measurement" translatable="false">计量单位</string>
+    <string name="purchase_price" translatable="false">采购价格</string>
+    <string name="selling_price" translatable="false">销售价格</string>
+    <string name="purchase_quantity" translatable="false">采购量</string>
+    <string name="cost" translatable="false">成本</string>
+    <string name="sellin_price" translatable="false">售价</string>
+    <string name="commodity_category" translatable="false">商品类别</string>
+    <string name="commodity_name" translatable="false">商品名称</string>
+    <string name="commodity_list" translatable="false">商品列表</string>
+    <string name="commodity" translatable="false">商品</string>
+    <string name="search" translatable="false">搜寻</string>
+    <string name="create_commodity" translatable="false">创建商品</string>
+
+    <string name="order_desc" translatable="false">订单详情</string>
+    <string name="remark" translatable="false">备注</string>
+    <string name="total" translatable="false">总计</string>
+    <string name="all" translatable="false">全部</string>
+    <string name="supply_consulting" translatable="false">供应咨询</string>
+    <string name="add_consulting" translatable="false">添加咨询</string>
+    <string name="order_record" translatable="false">订单记录</string>
+    <string name="order_data" translatable="false">订单日期</string>
+    <string name="order_num1" translatable="false">订单数量</string>
+    <string name="data_up" translatable="false">数据更新日期</string>
+    <string name="pictures_remarks" translatable="false">图片及备注</string>
+
+    <string name="buyer_management" translatable="false">买卖家管理</string>
+    <string name="management_number" translatable="false">买卖家编号</string>
+    <string name="management_name" translatable="false">买卖家名称</string>
+    <string name="management_category" translatable="false">类别</string>
+    <string name="contact_person" translatable="false">联络人</string>
+    <string name="phone" translatable="false">电话</string>
+    <string name="mail" translatable="false">电邮</string>
+
+</resources>

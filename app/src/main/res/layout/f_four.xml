@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints"
+        android:paddingTop="@dimen/px40"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_img"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_13"
+            android:layout_width="match_parent"
+            android:layout_height="240dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_head"
+            android:scaleType="fitXY"
+            android:src="@mipmap/place_holder_user"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/px150"
+            android:layout_marginLeft="@dimen/px60"
+            android:layout_width="75dp"
+            android:layout_height="75dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name"
+            android:text="蔡徐坤"
+            android:layout_marginTop="@dimen/px20"
+            app:layout_constraintLeft_toLeftOf="@id/iv_head"
+            app:layout_constraintRight_toRightOf="@id/iv_head"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/iv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_dynamic"
+            android:text="@string/buyer_management"
+            android:padding="@dimen/px30"
+            android:drawableRight="@mipmap/my_icon_return"
+            android:drawablePadding="@dimen/px30"
+            android:layout_width="match_parent"
+            android:background="@drawable/linerlayout_water_selector"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/iv_img"
+            android:layout_height="wrap_content" />
+
+    <com.flyco.roundview.RoundTextView
+            android:id="@+id/tv_out"
+            android:text="@string/out"
+            app:rv_cornerRadius="@dimen/px10"
+            app:rv_backgroundColor="@color/blue_00acc1"
+            app:rv_backgroundPressColor="@color/blue_00acc1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="@dimen/px60"
+            android:layout_width="wrap_content"
+            android:minEms="5"
+            android:textSize="@dimen/px26"
+            style="@style/roundTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/include_top" />
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_order_num"
+                    android:text="@string/order_number"
+                    android:padding="@dimen/px20"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/et_enter"
+                    app:layout_constraintTop_toTopOf="@id/tv_order_num"
+                    app:layout_constraintLeft_toRightOf="@id/tv_order_num"
+                    android:layout_marginLeft="20dp"
+                    android:padding="@dimen/px20"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintWidth_default="wrap"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    app:layout_constraintTop_toTopOf="@id/tv_state"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                    android:text="@string/state"
+                    android:padding="@dimen/px20"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_state"
+                    android:padding="@dimen/px20"
+                    android:drawablePadding="@dimen/px10"
+                    app:layout_constraintLeft_toLeftOf="@id/et_enter"
+                    app:layout_constraintTop_toBottomOf="@id/et_enter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    app:layout_constraintTop_toTopOf="@id/tv_harvest_date1"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                    android:text="@string/creation_date"
+                    android:padding="@dimen/px20"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_harvest_date1"
+                    android:padding="@dimen/px20"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_state"
+                    app:layout_constraintTop_toBottomOf="@id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    app:layout_constraintTop_toTopOf="@id/tv_choose"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                    android:text="@string/user"
+                    android:padding="@dimen/px20"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_choose"
+                    android:padding="@dimen/px20"
+                    android:drawablePadding="@dimen/px10"
+                    app:layout_constraintLeft_toLeftOf="@id/et_enter"
+                    app:layout_constraintTop_toBottomOf="@id/tv_harvest_date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/et_phone"
+                    app:layout_constraintLeft_toLeftOf="@id/et_enter"
+                    app:layout_constraintTop_toBottomOf="@id/tv_choose"
+                    android:padding="@dimen/px20"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    app:layout_constraintTop_toTopOf="@id/et_phone"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                    android:text="@string/user_phone"
+                    android:padding="@dimen/px20"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    app:layout_constraintTop_toTopOf="@id/et_address"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                    android:text="@string/user_address"
+                    android:padding="@dimen/px20"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/et_address"
+                    app:layout_constraintLeft_toLeftOf="@id/et_enter"
+                    app:layout_constraintTop_toBottomOf="@id/et_phone"
+                    android:padding="@dimen/px20"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_supplier"
+                    app:layout_constraintLeft_toLeftOf="@id/et_enter"
+                    app:layout_constraintTop_toBottomOf="@id/et_address"
+                    android:padding="@dimen/px20"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    app:layout_constraintTop_toTopOf="@id/tv_supplier"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                    android:text="@string/supplier"
+                    android:padding="@dimen/px20"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_supplier_phone"
+                    app:layout_constraintLeft_toLeftOf="@id/et_enter"
+                    app:layout_constraintTop_toBottomOf="@id/tv_supplier"
+                    android:padding="@dimen/px20"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    app:layout_constraintTop_toTopOf="@id/tv_supplier_phone"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                    android:text="@string/supplier_phone"
+                    android:padding="@dimen/px20"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_supplier_address"
+                    app:layout_constraintLeft_toLeftOf="@id/et_enter"
+                    app:layout_constraintTop_toBottomOf="@id/tv_supplier_phone"
+                    android:padding="@dimen/px20"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    app:layout_constraintTop_toTopOf="@id/tv_supplier_address"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                    android:text="@string/supplier_address"
+                    android:padding="@dimen/px20"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_remark"
+                    app:layout_constraintLeft_toLeftOf="@id/et_enter"
+                    app:layout_constraintTop_toBottomOf="@id/tv_supplier_address"
+                    android:padding="@dimen/px20"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    app:layout_constraintTop_toTopOf="@id/tv_remark"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                    android:text="@string/remark"
+                    android:padding="@dimen/px20"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <View
+                    android:id="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@id/tv_remark"
+                    style="@style/divider_1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    app:layout_constraintTop_toBottomOf="@id/view"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    tools:listitem="@layout/i_craete_order"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_total"
+                    app:layout_constraintLeft_toLeftOf="@id/et_enter"
+                    app:layout_constraintTop_toBottomOf="@id/recyclerView"
+                    android:layout_marginTop="@dimen/px20"
+                    android:padding="@dimen/px20"
+                    android:textSize="@dimen/px26"
+                    android:text="@string/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

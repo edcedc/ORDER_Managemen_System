@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">茶叶经销商</string>
+
+    <string name="message_permission_rationale">Grant the following permissions to continue the program:\n\n%1$s</string>
+    <string name="message_overlay_failed">Your phone does not allow us to use other applications.</string>
+    <string name="message_permission_always_failed">We need the following permissions, please enable them for us in the settings ：\n\n%1$s</string>
+    <string name="message_permission_always_failed1">We need the following permissions, please enable them for us in the settings</string>
+    <string name="setting" translatable="false">Set up</string>
+    <string name="resume" translatable="false">Retry</string>
+    <string name="cancel" translatable="false">Cancel</string>
+
+    <string name="error_phone" translatable="false">Wrong format of phone number</string>
+    <string name="error_phone1" translatable="false">Mobile number or verification code is empty</string>
+    <string name="error_" translatable="false">Please enter complete</string>
+    <string name="error_pwd_length" translatable="false">Please enter complete</string>
+    <string name="please_phone" translatable="false">Please enter the phone number</string>
+    <string name="please_code" translatable="false">Please enter SMS verification code</string>
+    <string name="please_pwd2" translatable="false">The two passwords do not match</string>
+    <string name="please_pwd3" translatable="false">Please enter password</string>
+    <string name="error_1" translatable="false">Please read the agreement</string>
+    <string name="sure" translatable="false">Save</string>
+
+    <string name="login" translatable="false">login</string>
+
+
+</resources>

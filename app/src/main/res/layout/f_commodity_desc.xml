@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/include_top" />
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlHeaderMaxDragRate="2.5"
+            app:srlPrimaryColor="@android:color/darker_gray"
+            app:srlAccentColor="@android:color/white">
+
+        <com.scwang.smart.refresh.header.MaterialHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_commodity"
+                        android:text="@string/commodity"
+                        android:layout_margin="@dimen/px10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_product"
+                        android:layout_marginTop="@dimen/px20"
+                        android:text="@string/prize_name"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_commodity"
+                        app:layout_constraintTop_toBottomOf="@id/tv_commodity"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_product_name"
+                        app:layout_constraintTop_toTopOf="@id/tv_product"
+                        app:layout_constraintLeft_toRightOf="@id/tv_product"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_product"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintWidth_default="wrap"
+                        android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:text="@string/product_number"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_product"
+                        app:layout_constraintTop_toTopOf="@id/tv_prize_name"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_prize_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_prize_name"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_product_name"
+                        app:layout_constraintTop_toBottomOf="@id/tv_product_name"
+                        android:layout_marginTop="@dimen/px20"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintWidth_default="wrap"
+                        android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_commodity_category1"
+                        android:text="@string/commodity_category"
+                        android:layout_marginLeft="130dp"
+                        app:layout_constraintLeft_toRightOf="@id/tv_product"
+                        app:layout_constraintTop_toTopOf="@id/tv_prize_name"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_prize_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv__commodity_category"
+                        app:layout_constraintLeft_toRightOf="@id/tv_commodity_category1"
+                        app:layout_constraintTop_toTopOf="@id/tv_commodity_category1"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_commodity_category1"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintWidth_default="wrap"
+                        android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_unit_measurement"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_product_name"
+                        app:layout_constraintTop_toBottomOf="@id/tv_prize_name"
+                        android:layout_marginTop="@dimen/px20"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintWidth_default="wrap"
+                        android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:text="@string/unit_measurement"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_product"
+                        app:layout_constraintTop_toTopOf="@id/tv_unit_measurement"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_unit_measurement"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_commodity_category"
+                        app:layout_constraintLeft_toRightOf="@id/tv_commodity_category1"
+                        app:layout_constraintTop_toTopOf="@id/tv_commodity_category1"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_commodity_category1"
+                        android:layout_marginLeft="@dimen/px20"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintWidth_default="wrap"
+                        android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_selling_price"
+                        app:layout_constraintTop_toTopOf="@id/tv_unit_measurement"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_unit_measurement"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_commodity_category"
+                        app:layout_constraintTop_toBottomOf="@id/tv_commodity_category"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintWidth_default="wrap"
+                        android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:text="@string/selling_price"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_commodity_category1"
+                        app:layout_constraintTop_toTopOf="@id/tv_unit_measurement"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_unit_measurement"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <View
+                        android:layout_marginTop="@dimen/px20"
+                        app:layout_constraintTop_toBottomOf="@id/tv_unit_measurement"
+                        android:id="@+id/view"
+                        style="@style/divider_1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:text="@string/supply_consulting"
+                        android:layout_margin="@dimen/px20"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/tv_add_consulting"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_add_consulting"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <com.flyco.roundview.RoundTextView
+                        android:id="@+id/tv_add_consulting"
+                        android:layout_marginTop="@dimen/px20"
+                        app:rv_cornerRadius="@dimen/px10"
+                        app:rv_strokeWidth="1dp"
+                        app:rv_backgroundColor="@color/white"
+                        app:rv_strokeColor="@color/blue_00acc1"
+                        android:gravity="center"
+                        android:padding="@dimen/px10"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/view"
+                        android:layout_marginRight="@dimen/px20"
+                        android:drawableLeft="@mipmap/icon_14"
+                        android:drawablePadding="@dimen/px10"
+                        android:text="@string/add_consulting"
+                        android:textSize="@dimen/px24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ry_consult"
+                        android:layout_marginTop="@dimen/px20"
+                        app:layout_constraintTop_toBottomOf="@id/tv_add_consulting"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        tools:listitem="@layout/i_consult_list"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_order_record"
+                        android:text="@string/order_record"
+                        android:layout_margin="@dimen/px20"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ry_consult"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        app:layout_constraintTop_toBottomOf="@id/tv_order_record"
+                        android:background="@color/white"
+                        android:layout_marginTop="@dimen/px20"
+                        android:layout_width="match_parent"
+                        tools:listitem="@layout/i_order_record"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never" />
+
+                <View
+                        android:id="@+id/view1"
+                        app:layout_constraintTop_toBottomOf="@id/recyclerView"
+                        style="@style/divider_1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_pictures_remarks"
+                        android:text="@string/pictures_remarks"
+                        android:layout_margin="@dimen/px20"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/view1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <GridView
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_margin="@dimen/px20"
+                        android:id="@+id/gv_pictures"
+                        android:numColumns="3"
+                        android:horizontalSpacing="5dp"
+                        android:verticalSpacing="5dp"
+                        android:scrollbars="none"
+                        app:layout_constraintTop_toBottomOf="@id/tv_pictures_remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_remark1"
+                        android:text="@string/remark"
+                        app:layout_constraintTop_toBottomOf="@id/gv_pictures"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/px30"
+                        android:layout_margin="@dimen/px20"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@id/tv_remark"
+                        app:layout_constraintLeft_toLeftOf="@id/tv_remark1"
+                        android:paddingRight="@dimen/px20"
+                        android:minLines="5"
+                        app:layout_constraintTop_toBottomOf="@id/tv_remark1"
+                        android:textSize="@dimen/px30"
+                        android:layout_width="wrap_content"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintWidth_default="wrap"
+                        android:layout_height="wrap_content" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+</LinearLayout>
