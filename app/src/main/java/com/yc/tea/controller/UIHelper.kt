@@ -7,6 +7,7 @@ import com.yc.tea.base.BaseFragment
 import com.yc.tea.ui.AddProductFrg
 import com.yc.tea.ui.AddSupplierFrg
 import com.yc.tea.ui.ForgetFrg
+import com.yc.tea.ui.ManagementDescFrg
 import com.yc.tea.ui.RegisterFrg
 import com.yc.tea.ui.act.*
 
@@ -127,6 +128,16 @@ class UIHelper private constructor() {
         fun startSellerManagementAct() {
             val bundle = Bundle()
             ActivityUtils.startActivity(bundle, SellerManagementAct::class.java)
+        }
+
+        /**
+         *  买卖家管理详情
+         */
+        fun startManagementDescFrg(root: BaseFragment) {
+            val frg = ManagementDescFrg()
+            val bundle = Bundle()
+            frg.setArguments(bundle)
+            root.start(frg)
         }
 
         /**

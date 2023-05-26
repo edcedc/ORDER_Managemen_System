@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">茶叶经销商</string>
+    <string name="app_name">ORDER Managemen System</string>
 
     <string name="message_permission_rationale">授予下列權限以繼續程序:\n\n%1$s</string>
     <string name="message_overlay_failed">您的電話不允許我們使用其他應用程序.</string>

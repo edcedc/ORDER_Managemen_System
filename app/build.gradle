@@ -59,7 +59,7 @@ android {
     // 自定义输出配置
     android.applicationVariants.all { variant ->
         variant.outputs.all {
-            outputFileName = "yyc_${variant.versionName}_${variant.name}_${releaseTime()}.apk"
+            outputFileName = "Managemen_System_${variant.versionName}_${variant.name}_${releaseTime()}.apk"
         }
     }
 

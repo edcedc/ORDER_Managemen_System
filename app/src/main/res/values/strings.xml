@@ -100,8 +100,14 @@
     <string name="management_number" translatable="false">买卖家编号</string>
     <string name="management_name" translatable="false">买卖家名称</string>
     <string name="management_category" translatable="false">类别</string>
+    <string name="management_category1" translatable="false">买卖家类别</string>
     <string name="contact_person" translatable="false">联络人</string>
     <string name="phone" translatable="false">电话</string>
     <string name="mail" translatable="false">电邮</string>
+    <string name="address" translatable="false">地址</string>
+    <string name="buyer_management_desc" translatable="false">买卖家管理详情</string>
+    <string name="bank_name" translatable="false">银行名称</string>
+    <string name="bank_code" translatable="false">银行代码</string>
+    <string name="bank_acc" translatable="false">银行账号</string>
 
 </resources>

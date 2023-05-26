@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">茶叶经销商</string>
+    <string name="app_name">ORDER Managemen System</string>
 
     <string name="message_permission_rationale">Grant the following permissions to continue the program:\n\n%1$s</string>
     <string name="message_overlay_failed">Your phone does not allow us to use other applications.</string>

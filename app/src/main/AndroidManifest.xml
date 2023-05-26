@@ -33,7 +33,7 @@
             android:largeHeap="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name="com.yc.tea.ui.act.SplashAct"
+                android:name="com.yc.tea.ui.act.LoginAct"
                 android:configChanges="orientation|keyboardHidden|screenSize"
                 android:theme="@style/AppTheme.customeTheme"
                 android:screenOrientation="portrait"
@@ -65,11 +65,11 @@
             android:theme="@style/AppTheme.NoActionBar.SwipeBack"
             android:screenOrientation="portrait"/>
 
-        <activity
-            android:name="com.yc.tea.ui.act.LoginAct"
-            android:resizeableActivity="true"
-            android:theme="@style/AppTheme.NoActionBar.SwipeBack"
-            android:screenOrientation="portrait"/>
+<!--        <activity-->
+<!--            android:name="com.yc.tea.ui.act.LoginAct"-->
+<!--            android:resizeableActivity="true"-->
+<!--            android:theme="@style/AppTheme.NoActionBar.SwipeBack"-->
+<!--            android:screenOrientation="portrait"/>-->
         <activity
             android:name="com.yc.tea.ui.act.CreateOrderAct"
             android:resizeableActivity="true"
