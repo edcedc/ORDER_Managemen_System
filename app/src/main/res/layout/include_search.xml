@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/layout"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_choose"
+            android:padding="@dimen/px10"
+            android:layout_marginLeft="@dimen/px10"
+            android:minEms="4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableRight="@mipmap/b13"
+            android:hint="@string/all"
+            android:background="@drawable/tv_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_enter"
+            android:layout_marginLeft="@dimen/px20"
+            android:hint="@string/enter"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/px20"
+            android:textSize="@dimen/px30"
+            android:minEms="10"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bt_sure"
+            android:padding="@dimen/px10"
+            android:layout_gravity="center"
+            android:textSize="@dimen/px26"
+            android:textColor="@color/black"
+            android:text="@string/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bt_move"
+            android:padding="@dimen/px10"
+            android:layout_gravity="center"
+            android:textSize="@dimen/px26"
+            android:drawablePadding="@dimen/px10"
+            android:drawableRight="@mipmap/b13"
+            android:textColor="@color/black"
+            android:text="@string/move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,27 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">茶叶经销商</string>
+    <string name="app_name">ORDER Managemen System</string>
 
-    <string name="message_permission_rationale">Grant the following permissions to continue the program:\n\n%1$s</string>
+    <string name="message_permission_rationale">Grant the following permission to continue the process:\n\n%1$s</string>
     <string name="message_overlay_failed">Your phone does not allow us to use other applications.</string>
-    <string name="message_permission_always_failed">We need the following permissions, please enable them for us in the settings ：\n\n%1$s</string>
-    <string name="message_permission_always_failed1">We need the following permissions, please enable them for us in the settings</string>
-    <string name="setting" translatable="false">Set up</string>
+    <string name="message_permission_always_failed">We need the following permission, please enable it for us in the settings:\n\n%1$s</string>
+    <string name="message_permission_always_failed1">We need the following permissions, please enable them in the settings</string>
+    <string name="setting" translatable="false">Setting</string>
     <string name="resume" translatable="false">Retry</string>
     <string name="cancel" translatable="false">Cancel</string>
+    <string name="out" translatable="false">Exit account</string>
 
-    <string name="error_phone" translatable="false">Wrong format of phone number</string>
-    <string name="error_phone1" translatable="false">Mobile number or verification code is empty</string>
+    <string name="home" translatable="false">front page</string>
+    <string name="order_management" translatable="false">order</string>
+    <string name="commodity_management" translatable="false">commodity</string>
+    <string name="mine" translatable="false">mine</string>
+
+    <string name="error_phone" translatable="false">The mobile phone number is in the wrong format</string>
+    <string name="error_phone1" translatable="false">The phone number or verification code is empty</string>
     <string name="error_" translatable="false">Please enter complete</string>
-    <string name="error_pwd_length" translatable="false">Please enter complete</string>
-    <string name="please_phone" translatable="false">Please enter the phone number</string>
+    <string name="error_pwd_length" translatable="false">The password is in 6~16 digits</string>
+    <string name="please_phone" translatable="false">Please enter the mobile phone number</string>
     <string name="please_code" translatable="false">Please enter SMS verification code</string>
-    <string name="please_pwd2" translatable="false">The two passwords do not match</string>
-    <string name="please_pwd3" translatable="false">Please enter password</string>
+    <string name="please_pwd1" translatable="false">Please enter the password again</string>
+    <string name="please_pwd2" translatable="false">The two passwords are inconsistent</string>
+    <string name="please_pwd3" translatable="false">Please enter the password</string>
     <string name="error_1" translatable="false">Please read the agreement</string>
-    <string name="sure" translatable="false">Save</string>
+    <string name="sure" translatable="false">Complete</string>
+    <string name="del" translatable="false">Delete</string>
 
     <string name="login" translatable="false">login</string>
+    <string name="forget_the_password" translatable="false">Forget the password</string>
+    <string name="register" translatable="false">Register</string>
 
+    <string name="order_num" translatable="false">Number of orders this month</string>
+    <string name="order" translatable="false">Order</string>
+    <string name="sales_amount_this_month" translatable="false">This month sales amount (K)</string>
+    <string name="purchase_cost" translatable="false">Purchase cost for this month (K)</string>
+    <string name="cost_rate" translatable="false">Total cost rate of this month (K)</string>
+    <string name="order_progress" translatable="false">Order in progress</string>
+
+    <string name="order_number" translatable="false">order number</string>
+    <string name="creation_date" translatable="false">Creation date</string>
+    <string name="founder" translatable="false">Founder</string>
+    <string name="user" translatable="false">Customer</string>
+    <string name="user_phone" translatable="false">Customer Phone</string>
+    <string name="user_address" translatable="false">Customer address</string>
+    <string name="supplier" translatable="false">Supplier</string>
+    <string name="supplier_phone" translatable="false">Supplier phone</string>
+    <string name="supplier_name" translatable="false">Supplier name</string>
+    <string name="supplier_address" translatable="false">Supplier address</string>
+    <string name="supplier_num" translatable="false">Supplier number</string>
+    <string name="add_supplier" translatable="false">Add supplier</string>
+    <string name="supplier_category" translatable="false">Supplier Category</string>
+    <string name="supply_category" translatable="false">Supply category</string>
+    <string name="purchase" translatable="false">Purchase cost</string>
+    <string name="sales_amount" translatable="false">sales amount</string>
+    <string name="data_update_date" translatable="false">Data update date</string>
+    <string name="state" translatable="false">state</string>
+
+    <string name="purchasing_customers" translatable="false">Purchasing customers</string>
+    <string name="lump_sum" translatable="false">Total amount</string>
+    <string name="profit" translatable="false">Profit</string>
+    <string name="estimated_delivery_date" translatable="false">Estimated delivery date</string>
+    <string name="actual_date_of_receipt" translatable="false">actual date of receipt</string>
+    <string name="estimated_delivery_date1" translatable="false">Estimated delivery date</string>
+    <string name="actual_delivery_date" translatable="false">actual delivery date</string>
+    <string name="choose" translatable="false">Please choose</string>
+    <string name="enter" translatable="false">Please enter</string>
+    <string name="order_list" translatable="false">Order list</string>
+    <string name="harvest_date" translatable="false">Date of harvest</string>
+    <string name="shipping_date" translatable="false">shipping date</string>
+    <string name="create_order" translatable="false">Create an order</string>
+
+    <string name="product_number" translatable="false">product number</string>
+    <string name="add_product_number" translatable="false">Add product number</string>
+    <string name="prize_name" translatable="false">Product name</string>
+    <string name="prize_desc" translatable="false">Product details</string>
+    <string name="unit_measurement" translatable="false">Unit of measurement</string>
+    <string name="purchase_price" translatable="false">Purchase price</string>
+    <string name="selling_price" translatable="false">Sales price</string>
+    <string name="purchase_quantity" translatable="false">Purchase quantity</string>
+    <string name="cost" translatable="false">Cost</string>
+    <string name="sellin_price" translatable="false">Price</string>
+    <string name="commodity_category" translatable="false">commodity category</string>
+    <string name="commodity_name" translatable="false">commodity name</string>
+    <string name="commodity_list" translatable="false">commodity list</string>
+    <string name="commodity" translatable="false">Commodity</string>
+    <string name="search" translatable="false">Search</string>
+    <string name="create_commodity" translatable="false">Create Commodity</string>
+
+    <string name="order_desc" translatable="false">Order details</string>
+    <string name="remark" translatable="false">Remark</string>
+    <string name="total" translatable="false">Total</string>
+    <string name="all" translatable="false">All</string>
+    <string name="supply_consulting" translatable="false">Supply Consulting</string>
+    <string name="add_consulting" translatable="false">Add Consulting</string>
+    <string name="order_record" translatable="false">order record</string>
+    <string name="order_data" translatable="false">order date</string>
+    <string name="order_num1" translatable="false">order quantity</string>
+    <string name="data_up" translatable="false">Data update date</string>
+    <string name="pictures_remarks" translatable="false">pictures and remarks</string>
+
+    <string name="buyer_management" translatable="false">Buyer management</string>
+    <string name="management_number" translatable="false">Buyer number</string>
+    <string name="management_name" translatable="false">Seller name</string>
+    <string name="management_category" translatable="false">category</string>
+    <string name="management_category1" translatable="false">Buyer category</string>
+    <string name="contact_person" translatable="false">Contact person</string>
+    <string name="phone" translatable="false">Phone</string>
+    <string name="mail" translatable="false">Email</string>
+    <string name="address" translatable="false">Address</string>
+    <string name="buyer_management_desc" translatable="false">Buyer management details</string>
+    <string name="bank_name" translatable="false">Bank name</string>
+    <string name="bank_code" translatable="false">Bank code</string>
+    <string name="bank_acc" translatable="false">Bank account number</string>
+
+    <string name="move" translatable="false">More</string>
 
 </resources>

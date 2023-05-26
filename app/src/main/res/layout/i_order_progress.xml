@@ -44,10 +44,11 @@
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_data"
             app:layout_constraintTop_toTopOf="@id/tv_creation_date"
+            app:layout_constraintBottom_toBottomOf="@id/tv_creation_date"
             app:layout_constraintLeft_toRightOf="@id/tv_creation_date"
             android:textSize="@dimen/px25"
             android:layout_marginLeft="@dimen/px90"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -65,10 +66,11 @@
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_founder"
             app:layout_constraintTop_toTopOf="@id/tv_creation_date"
+            app:layout_constraintBottom_toBottomOf="@id/tv_creation_date"
             app:layout_constraintLeft_toRightOf="@id/tv_founder1"
             android:textSize="@dimen/px25"
             android:layout_marginLeft="@dimen/px50"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -85,10 +87,11 @@
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_user"
             app:layout_constraintTop_toTopOf="@id/tv_user1"
+            app:layout_constraintBottom_toBottomOf="@id/tv_user1"
             app:layout_constraintLeft_toRightOf="@id/tv_user1"
             app:layout_constraintLeft_toLeftOf="@id/tv_data"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -105,9 +108,10 @@
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_supplier"
             app:layout_constraintTop_toTopOf="@id/tv_supplier1"
+            app:layout_constraintBottom_toBottomOf="@id/tv_supplier1"
             app:layout_constraintLeft_toLeftOf="@id/tv_data"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -124,10 +128,11 @@
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_purchase"
             app:layout_constraintTop_toTopOf="@id/tv_purchase1"
+            app:layout_constraintBottom_toBottomOf="@id/tv_purchase1"
             app:layout_constraintLeft_toRightOf="@id/tv_user1"
             app:layout_constraintLeft_toLeftOf="@id/tv_data"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -143,10 +148,11 @@
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_sales_amount"
             app:layout_constraintTop_toTopOf="@id/tv_purchase1"
+            app:layout_constraintBottom_toBottomOf="@id/tv_purchase1"
             app:layout_constraintLeft_toLeftOf="@id/tv_founder"
             android:layout_width="wrap_content"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_height="wrap_content"/>
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -162,10 +168,11 @@
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_data_update"
             app:layout_constraintTop_toTopOf="@id/tv_data_update_date"
+            app:layout_constraintBottom_toBottomOf="@id/tv_data_update_date"
             app:layout_constraintLeft_toRightOf="@id/tv_user1"
             app:layout_constraintLeft_toLeftOf="@id/tv_data"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

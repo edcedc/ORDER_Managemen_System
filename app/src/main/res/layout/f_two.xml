@@ -37,14 +37,14 @@
                     android:layout_height="match_parent"
                     android:fillViewport="true">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <LinearLayout
+                        android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                     <androidx.appcompat.widget.AppCompatTextView
                             android:id="@+id/tv_order_list"
                             android:layout_marginLeft="@dimen/px10"
-                            app:layout_constraintLeft_toLeftOf="parent"
                             android:text="@string/order_list"
                             android:padding="@dimen/px20"
                             android:textColor="@color/black"
@@ -53,222 +53,239 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/tv_order_num"
-                            app:layout_constraintLeft_toLeftOf="@id/tv_order_list"
-                            app:layout_constraintTop_toBottomOf="@id/tv_order_list"
-                            android:text="@string/purchasing_customers"
-                            android:padding="@dimen/px20"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/px28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                    <include layout="@layout/include_search" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/tv_choose"
-                            android:padding="@dimen/px20"
-                            android:drawablePadding="@dimen/px10"
-                            android:minEms="5"
-                            android:gravity="center"
-                            app:layout_constraintLeft_toRightOf="@id/tv_order_num"
-                            android:drawableRight="@mipmap/b13"
-                            android:hint="@string/choose"
-                            app:layout_constraintTop_toTopOf="@id/tv_order_num"
-                            android:background="@drawable/tv_border"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cl_layout"
+                            android:visibility="gone"
+                            app:layout_constraintTop_toBottomOf="@id/layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            app:layout_constraintTop_toTopOf="@id/tv_supplier"
-                            app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
-                            android:text="@string/supplier"
-                            android:padding="@dimen/px20"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/px28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_order_num"
+                                android:text="@string/purchasing_customers"
+                                android:padding="@dimen/px20"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/px28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/tv_supplier"
-                            android:layout_marginTop="@dimen/px10"
-                            android:padding="@dimen/px20"
-                            android:drawablePadding="@dimen/px10"
-                            android:minEms="5"
-                            android:gravity="center"
-                            app:layout_constraintLeft_toLeftOf="@id/tv_choose"
-                            app:layout_constraintTop_toBottomOf="@id/tv_choose"
-                            android:drawableRight="@mipmap/b13"
-                            android:hint="@string/choose"
-                            android:background="@drawable/tv_border"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_choose"
+                                android:padding="@dimen/px10"
+                                android:drawablePadding="@dimen/px10"
+                                android:minEms="5"
+                                android:textSize="@dimen/px24"
+                                android:gravity="center"
+                                app:layout_constraintLeft_toRightOf="@id/tv_order_num"
+                                android:drawableRight="@mipmap/b13"
+                                android:hint="@string/choose"
+                                app:layout_constraintTop_toTopOf="@id/tv_order_num"
+                                app:layout_constraintBottom_toBottomOf="@id/tv_order_num"
+                                android:background="@drawable/tv_border"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            app:layout_constraintTop_toTopOf="@id/et_enter"
-                            app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
-                            android:text="@string/order_number"
-                            android:padding="@dimen/px20"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/px28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                app:layout_constraintTop_toTopOf="@id/tv_supplier"
+                                app:layout_constraintBottom_toBottomOf="@id/tv_supplier"
+                                app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                                android:text="@string/supplier"
+                                android:padding="@dimen/px20"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/px28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <androidx.appcompat.widget.AppCompatEditText
-                            android:id="@+id/et_enter"
-                            android:layout_marginTop="@dimen/px10"
-                            app:layout_constraintLeft_toLeftOf="@id/tv_supplier"
-                            app:layout_constraintTop_toBottomOf="@id/tv_supplier"
-                            android:hint="@string/enter"
-                            android:paddingLeft="@dimen/px20"
-                            android:textSize="@dimen/px28"
-                            android:minEms="10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_supplier"
+                                android:layout_marginTop="@dimen/px10"
+                                android:padding="@dimen/px10"
+                                android:drawablePadding="@dimen/px10"
+                                android:minEms="5"
+                                android:textSize="@dimen/px24"
+                                android:gravity="center"
+                                app:layout_constraintLeft_toLeftOf="@id/tv_choose"
+                                app:layout_constraintTop_toBottomOf="@id/tv_choose"
+                                android:drawableRight="@mipmap/b13"
+                                android:hint="@string/choose"
+                                android:background="@drawable/tv_border"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            app:layout_constraintTop_toTopOf="@id/tv_state"
-                            app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
-                            android:text="@string/state"
-                            android:padding="@dimen/px20"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/px28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                app:layout_constraintTop_toTopOf="@id/et_enter"
+                                app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                                android:text="@string/order_number"
+                                android:padding="@dimen/px20"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/px28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/tv_state"
-                            android:layout_marginTop="@dimen/px10"
-                            android:padding="@dimen/px20"
-                            android:drawablePadding="@dimen/px10"
-                            android:minEms="5"
-                            android:gravity="center"
-                            app:layout_constraintLeft_toLeftOf="@id/et_enter"
-                            app:layout_constraintTop_toBottomOf="@id/et_enter"
-                            android:drawableRight="@mipmap/b13"
-                            android:hint="@string/choose"
-                            android:background="@drawable/tv_border"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/et_enter"
+                                android:layout_marginTop="@dimen/px10"
+                                app:layout_constraintLeft_toLeftOf="@id/tv_supplier"
+                                app:layout_constraintTop_toBottomOf="@id/tv_supplier"
+                                android:hint="@string/enter"
+                                android:paddingLeft="@dimen/px20"
+                                android:textSize="@dimen/px28"
+                                android:minEms="10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            app:layout_constraintTop_toTopOf="@id/tv_harvest_date1"
-                            app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
-                            android:text="@string/harvest_date"
-                            android:padding="@dimen/px20"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/px28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                app:layout_constraintTop_toTopOf="@id/tv_state"
+                                app:layout_constraintBottom_toBottomOf="@id/tv_state"
+                                app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                                android:text="@string/state"
+                                android:padding="@dimen/px20"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/px28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/tv_harvest_date1"
-                            android:layout_marginTop="@dimen/px10"
-                            android:padding="@dimen/px20"
-                            android:drawablePadding="@dimen/px10"
-                            android:minEms="5"
-                            android:gravity="center"
-                            app:layout_constraintLeft_toLeftOf="@id/tv_state"
-                            app:layout_constraintTop_toBottomOf="@id/tv_state"
-                            android:drawableRight="@mipmap/b13"
-                            android:hint="@string/choose"
-                            android:background="@drawable/tv_border"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_state"
+                                android:layout_marginTop="@dimen/px10"
+                                android:padding="@dimen/px10"
+                                android:textSize="@dimen/px24"
+                                android:drawablePadding="@dimen/px10"
+                                android:minEms="5"
+                                android:gravity="center"
+                                app:layout_constraintLeft_toLeftOf="@id/et_enter"
+                                app:layout_constraintTop_toBottomOf="@id/et_enter"
+                                android:drawableRight="@mipmap/b13"
+                                android:hint="@string/choose"
+                                android:background="@drawable/tv_border"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <View
-                            android:id="@+id/view"
-                            app:layout_constraintBottom_toBottomOf="@id/tv_harvest_date1"
-                            app:layout_constraintTop_toTopOf="@id/tv_harvest_date1"
-                            app:layout_constraintLeft_toRightOf="@id/tv_harvest_date1"
-                            android:background="@color/gray_999999"
-                            android:layout_marginLeft="@dimen/px28"
-                            android:layout_width="15dp"
-                            android:layout_height="2dp" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                app:layout_constraintTop_toTopOf="@id/tv_harvest_date1"
+                                app:layout_constraintBottom_toBottomOf="@id/tv_harvest_date1"
+                                app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                                android:text="@string/harvest_date"
+                                android:padding="@dimen/px20"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/px28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/tv_harvest_date2"
-                            android:layout_marginLeft="@dimen/px28"
-                            app:layout_constraintTop_toTopOf="@id/tv_harvest_date1"
-                            android:padding="@dimen/px20"
-                            android:drawablePadding="@dimen/px10"
-                            android:minEms="5"
-                            android:gravity="center"
-                            app:layout_constraintLeft_toRightOf="@id/view"
-                            app:layout_constraintTop_toBottomOf="@id/tv_state"
-                            android:drawableRight="@mipmap/b13"
-                            android:hint="@string/choose"
-                            android:background="@drawable/tv_border"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_harvest_date1"
+                                android:layout_marginTop="@dimen/px10"
+                                android:padding="@dimen/px10"
+                                android:drawablePadding="@dimen/px10"
+                                android:minEms="5"
+                                android:gravity="center"
+                                android:textSize="@dimen/px24"
+                                app:layout_constraintLeft_toLeftOf="@id/tv_state"
+                                app:layout_constraintTop_toBottomOf="@id/tv_state"
+                                android:drawableRight="@mipmap/b13"
+                                android:hint="@string/choose"
+                                android:background="@drawable/tv_border"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            app:layout_constraintTop_toTopOf="@id/tv_shipping_date1"
-                            app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
-                            android:text="@string/shipping_date"
-                            android:padding="@dimen/px20"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/px28"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <View
+                                android:id="@+id/view"
+                                app:layout_constraintBottom_toBottomOf="@id/tv_harvest_date1"
+                                app:layout_constraintTop_toTopOf="@id/tv_harvest_date1"
+                                app:layout_constraintLeft_toRightOf="@id/tv_harvest_date1"
+                                android:background="@color/gray_999999"
+                                android:layout_marginLeft="@dimen/px28"
+                                android:layout_width="15dp"
+                                android:layout_height="2dp" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/tv_shipping_date1"
-                            android:layout_marginTop="@dimen/px10"
-                            android:padding="@dimen/px20"
-                            android:drawablePadding="@dimen/px10"
-                            android:minEms="5"
-                            android:gravity="center"
-                            app:layout_constraintLeft_toLeftOf="@id/tv_harvest_date1"
-                            app:layout_constraintTop_toBottomOf="@id/tv_harvest_date1"
-                            android:drawableRight="@mipmap/b13"
-                            android:hint="@string/choose"
-                            android:background="@drawable/tv_border"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_harvest_date2"
+                                android:layout_marginLeft="@dimen/px28"
+                                app:layout_constraintTop_toTopOf="@id/tv_harvest_date1"
+                                android:padding="@dimen/px10"
+                                android:drawablePadding="@dimen/px10"
+                                android:minEms="5"
+                                android:textSize="@dimen/px24"
+                                android:gravity="center"
+                                app:layout_constraintLeft_toRightOf="@id/view"
+                                app:layout_constraintTop_toBottomOf="@id/tv_state"
+                                android:drawableRight="@mipmap/b13"
+                                android:hint="@string/choose"
+                                android:background="@drawable/tv_border"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <View
-                            android:id="@+id/view1"
-                            app:layout_constraintBottom_toBottomOf="@id/tv_shipping_date1"
-                            app:layout_constraintTop_toTopOf="@id/tv_shipping_date1"
-                            app:layout_constraintLeft_toRightOf="@id/tv_shipping_date1"
-                            android:background="@color/gray_999999"
-                            android:layout_marginLeft="@dimen/px28"
-                            android:layout_width="15dp"
-                            android:layout_height="2dp" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                app:layout_constraintTop_toTopOf="@id/tv_shipping_date1"
+                                app:layout_constraintBottom_toBottomOf="@id/tv_shipping_date1"
+                                app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                                android:text="@string/shipping_date"
+                                android:padding="@dimen/px20"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/px28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                            android:id="@+id/tv_shipping_date2"
-                            android:layout_marginLeft="@dimen/px28"
-                            android:padding="@dimen/px20"
-                            android:drawablePadding="@dimen/px10"
-                            android:minEms="5"
-                            android:gravity="center"
-                            app:layout_constraintLeft_toRightOf="@id/view1"
-                            app:layout_constraintTop_toTopOf="@id/tv_shipping_date1"
-                            android:drawableRight="@mipmap/b13"
-                            android:hint="@string/choose"
-                            android:background="@drawable/tv_border"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_shipping_date1"
+                                android:layout_marginTop="@dimen/px10"
+                                android:padding="@dimen/px10"
+                                android:drawablePadding="@dimen/px10"
+                                android:minEms="5"
+                                android:gravity="center"
+                                android:textSize="@dimen/px24"
+                                app:layout_constraintLeft_toLeftOf="@id/tv_harvest_date1"
+                                app:layout_constraintTop_toBottomOf="@id/tv_harvest_date1"
+                                android:drawableRight="@mipmap/b13"
+                                android:hint="@string/choose"
+                                android:background="@drawable/tv_border"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
-                    <androidx.appcompat.widget.AppCompatButton
-                            android:id="@+id/bt_sure"
-                            android:layout_marginTop="@dimen/px10"
-                            android:text="@string/sure"
-                            app:layout_constraintTop_toBottomOf="@id/tv_shipping_date1"
-                            app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                        <View
+                                android:id="@+id/view1"
+                                app:layout_constraintBottom_toBottomOf="@id/tv_shipping_date1"
+                                app:layout_constraintTop_toTopOf="@id/tv_shipping_date1"
+                                app:layout_constraintLeft_toRightOf="@id/tv_shipping_date1"
+                                android:background="@color/gray_999999"
+                                android:layout_marginLeft="@dimen/px28"
+                                android:layout_width="15dp"
+                                android:layout_height="2dp" />
 
-                    <View
-                            android:id="@+id/view2"
-                            android:layout_marginTop="@dimen/px28"
-                            app:layout_constraintTop_toBottomOf="@id/bt_sure"
-                            style="@style/divider_1" />
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_shipping_date2"
+                                android:layout_marginLeft="@dimen/px28"
+                                android:padding="@dimen/px10"
+                                android:drawablePadding="@dimen/px10"
+                                android:minEms="5"
+                                android:gravity="center"
+                                android:textSize="@dimen/px24"
+                                app:layout_constraintLeft_toRightOf="@id/view1"
+                                app:layout_constraintTop_toTopOf="@id/tv_shipping_date1"
+                                android:drawableRight="@mipmap/b13"
+                                android:hint="@string/choose"
+                                android:background="@drawable/tv_border"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/bt_sure"
+                                android:layout_marginTop="@dimen/px10"
+                                android:text="@string/sure"
+                                android:textSize="@dimen/px24"
+                                app:layout_constraintTop_toBottomOf="@id/tv_shipping_date1"
+                                app:layout_constraintLeft_toLeftOf="@id/tv_order_num"
+                                android:layout_width="60dp"
+                                android:layout_height="40dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View style="@style/divider_1" />
 
                     <androidx.recyclerview.widget.RecyclerView
                             android:id="@+id/recyclerView"
-                            app:layout_constraintTop_toBottomOf="@id/view2"
                             android:background="@color/white"
                             android:layout_width="match_parent"
                             tools:listitem="@layout/i_order_list"
@@ -276,7 +293,7 @@
                             android:nestedScrollingEnabled="false"
                             android:overScrollMode="never" />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
 
             </androidx.core.widget.NestedScrollView>
 

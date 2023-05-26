@@ -10,6 +10,11 @@
     <string name="cancel" translatable="false">取消</string>
     <string name="out" translatable="false">退出账号</string>
 
+    <string name="home" translatable="false">首页</string>
+    <string name="order_management" translatable="false">订单管理</string>
+    <string name="commodity_management" translatable="false">商品管理</string>
+    <string name="mine" translatable="false">我的</string>
+
     <string name="error_phone" translatable="false">手机号码格式错误</string>
     <string name="error_phone1" translatable="false">手机号码或验证码为空</string>
     <string name="error_" translatable="false">请输入完整</string>
@@ -33,7 +38,7 @@
     <string name="purchase_cost" translatable="false">本⽉采购成本（K）</string>
     <string name="cost_rate" translatable="false">本⽉总成本率（K）</string>
     <string name="order_progress" translatable="false">进行中的订单</string>
-    
+
     <string name="order_number" translatable="false">订单编号</string>
     <string name="creation_date" translatable="false">创建日期</string>
     <string name="founder" translatable="false">创建人</string>
@@ -100,8 +105,16 @@
     <string name="management_number" translatable="false">买卖家编号</string>
     <string name="management_name" translatable="false">买卖家名称</string>
     <string name="management_category" translatable="false">类别</string>
+    <string name="management_category1" translatable="false">买卖家类别</string>
     <string name="contact_person" translatable="false">联络人</string>
     <string name="phone" translatable="false">电话</string>
     <string name="mail" translatable="false">电邮</string>
+    <string name="address" translatable="false">地址</string>
+    <string name="buyer_management_desc" translatable="false">买卖家管理详情</string>
+    <string name="bank_name" translatable="false">银行名称</string>
+    <string name="bank_code" translatable="false">银行代码</string>
+    <string name="bank_acc" translatable="false">银行账号</string>
+
+    <string name="move" translatable="false">更多</string>
 
 </resources>

@@ -42,12 +42,13 @@
 
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_prize_name"
+            app:layout_constraintRight_toLeftOf="@id/tv_tv_commodity_category1"
             app:layout_constraintLeft_toLeftOf="@id/tv_product_num"
             app:layout_constraintTop_toBottomOf="@id/tv_product_num"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_marginTop="@dimen/px28"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -65,7 +66,7 @@
             app:layout_constraintLeft_toLeftOf="@id/tv_product_num"
             app:layout_constraintTop_toBottomOf="@id/tv_prize_name"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_marginTop="@dimen/px28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -85,7 +86,7 @@
             app:layout_constraintLeft_toLeftOf="@id/tv_product_num"
             app:layout_constraintTop_toBottomOf="@id/tv_supplier"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_marginTop="@dimen/px28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -106,7 +107,7 @@
             app:layout_constraintLeft_toLeftOf="@id/tv_product_num"
             app:layout_constraintTop_toBottomOf="@id/tv_unit_measurement"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_marginTop="@dimen/px28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -114,7 +115,7 @@
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_selling_price1"
             android:textSize="@dimen/px28"
-            android:layout_marginLeft="140dp"
+            android:layout_marginLeft="170dp"
             app:layout_constraintTop_toTopOf="@id/tv_purchase_price"
             app:layout_constraintBottom_toBottomOf="@id/tv_purchase_price"
             app:layout_constraintLeft_toRightOf="@id/tv_purchase"
@@ -130,7 +131,7 @@
             app:layout_constraintTop_toTopOf="@id/tv_selling_price1"
             app:layout_constraintBottom_toBottomOf="@id/tv_selling_price1"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -152,7 +153,7 @@
             app:layout_constraintTop_toTopOf="@id/tv_tv_commodity_category1"
             app:layout_constraintBottom_toBottomOf="@id/tv_tv_commodity_category1"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 

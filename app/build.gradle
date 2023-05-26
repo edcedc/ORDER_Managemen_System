@@ -59,7 +59,7 @@ android {
     // 自定义输出配置
     android.applicationVariants.all { variant ->
         variant.outputs.all {
-            outputFileName = "yyc_${variant.versionName}_${variant.name}_${releaseTime()}.apk"
+            outputFileName = "Managemen_System_${variant.versionName}_${variant.name}_${releaseTime()}.apk"
         }
     }
 
@@ -143,6 +143,8 @@ dependencies {
     //bugly
     implementation 'com.tencent.bugly:crashreport:latest.release' //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
     implementation 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+    //PopupWindow
+    implementation 'com.github.zyyoona7:EasyPopup:1.1.2'
 
 
     // appcompat-v7包是必须的

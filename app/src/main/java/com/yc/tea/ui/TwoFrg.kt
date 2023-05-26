@@ -2,6 +2,7 @@ package com.yc.tea.ui
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DividerItemDecoration
 import com.scwang.smart.refresh.layout.api.RefreshLayout
 import com.scwang.smart.refresh.layout.listener.OnRefreshLoadMoreListener
@@ -12,9 +13,10 @@ import com.yc.tea.bean.DataBean
 import com.yc.tea.controller.UIHelper
 import com.yc.tea.mvp.impl.TwoContract
 import com.yc.tea.mvp.presenter.TwoPresenter
+import com.yc.tea.utils.AnimationUtil
 import com.yc.tea.utils.DatePickerUtils
 import com.yc.tea.weight.LinearDividerItemDecoration
-import kotlinx.android.synthetic.main.f_two.bt_sure
+import kotlinx.android.synthetic.main.f_two.cl_layout
 import kotlinx.android.synthetic.main.f_two.recyclerView
 import kotlinx.android.synthetic.main.f_two.refreshLayout
 import kotlinx.android.synthetic.main.f_two.tv_choose
@@ -24,6 +26,8 @@ import kotlinx.android.synthetic.main.f_two.tv_shipping_date1
 import kotlinx.android.synthetic.main.f_two.tv_shipping_date2
 import kotlinx.android.synthetic.main.f_two.tv_state
 import kotlinx.android.synthetic.main.f_two.tv_supplier
+import kotlinx.android.synthetic.main.include_search.bt_move
+import kotlinx.android.synthetic.main.include_search.bt_sure
 
 /**
  * Created by Android Studio.
@@ -72,6 +76,7 @@ class TwoFrg : BaseFragment(), TwoContract.View, View.OnClickListener{
         tv_shipping_date1.setOnClickListener(this)
         tv_shipping_date2.setOnClickListener(this)
         bt_sure.setOnClickListener(this)
+        bt_move.setOnClickListener(this)
 
         refreshLayout.setEnableLoadMore(false)
         setRecyclerViewType(recyclerView = recyclerView)
@@ -173,7 +178,16 @@ class TwoFrg : BaseFragment(), TwoContract.View, View.OnClickListener{
             R.id.bt_sure ->{
 
             }
+            R.id.bt_move ->{
+                if (cl_layout.isVisible){
+                    AnimationUtil.fadeOut(cl_layout);
+                }else{
+                    AnimationUtil.fadeIn(cl_layout);
+                }
+            }
         }
     }
+
+
 
 }

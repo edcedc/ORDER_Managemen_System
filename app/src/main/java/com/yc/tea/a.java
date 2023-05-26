@@ -1,10 +1,7 @@
 package com.yc.tea;
 
-import android.os.Bundle;
+import android.view.animation.AlphaAnimation;
 
-import androidx.annotation.NonNull;
-
-import com.yc.tea.base.BaseActivity;
 import com.yc.tea.bean.DataBean;
 
 import java.util.ArrayList;
@@ -21,15 +18,27 @@ public class a   {
 
     private boolean isRefresh = false;
 
+    String[] str = {"", ""};
+
     public void  dsadas(){
         DataBean bean = new DataBean();
         List list = new ArrayList();
-        for (int i = 0; i < 9; i++){
+        for (int i = 0; i < str.length; i++){
             list.add(bean);
         }
-
-
     }
 
+    private AlphaAnimation alphaAniShow, alphaAniHide;
 
+
+    //透明度动画
+    private void alphaAnimation() {
+        //显示
+        alphaAniShow = new AlphaAnimation(0, 1);//百分比透明度，从0%到100%显示
+        alphaAniShow.setDuration(1000);//一秒
+
+        //隐藏
+        alphaAniHide = new AlphaAnimation(1, 0);
+        alphaAniHide.setDuration(1000);
+    }
 }

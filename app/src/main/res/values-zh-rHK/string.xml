@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">ORDER Managemen System</string>
+
+    <string name="message_permission_rationale">授予下列權限以繼續程序:\n\n%1$s</string>
+    <string name="message_overlay_failed">您的電話不允許我們使用其他應用程序.</string>
+    <string name="message_permission_always_failed">我們需要以下權限，請在設置中為我們開啟：\n\n%1$s</string>
+    <string name="message_permission_always_failed1">我們需要以下權限，請在設置中為我們開啟</string>
+    <string name="setting" translatable="false">設置</string>
+    <string name="resume" translatable="false">重試</string>
+    <string name="cancel" translatable="false">取消</string>
+    <string name="out" translatable="false">退出賬號</string>
+
+    <string name="error_phone" translatable="false">手機號碼格式錯誤</string>
+    <string name="error_phone1" translatable="false">手機號碼或驗證碼為空</string>
+    <string name="error_" translatable="false">請輸入完整</string>
+    <string name="error_pwd_length" translatable="false">密碼位於6~16位</string>
+    <string name="please_phone" translatable="false">請輸入手機號碼</string>
+    <string name="please_code" translatable="false">請輸入短信驗證碼</string>
+    <string name="please_pwd1" translatable="false">請再次輸入密碼</string>
+    <string name="please_pwd2" translatable="false">兩次密碼不一致</string>
+    <string name="please_pwd3" translatable="false">請輸入密碼</string>
+    <string name="error_1" translatable="false">請閱讀協議</string>
+    <string name="sure" translatable="false">完成</string>
+    <string name="del" translatable="false">刪除</string>
+    <string name="login" translatable="false">登錄</string>
+    <string name="forget_the_password" translatable="false">忘记密码</string>
+    <string name="register" translatable="false">注册</string>
+
+    <string name="home" translatable="false">首頁</string>
+    <string name="order_management" translatable="false">訂單管理</string>
+    <string name="commodity_management" translatable="false">商品管理</string>
+    <string name="mine" translatable="false">我的</string>
+
+    <string name="order_num" translatable="false">本月訂單數量</string>
+    <string name="order" translatable="false">單</string>
+    <string name="sales_amount_this_month" translatable="false">本月銷售金額（K）</string>
+    <string name="purchase_cost" translatable="false">本⽉採購成本（K）</string>
+    <string name="cost_rate" translatable="false">本⽉總成本率（K）</string>
+    <string name="order_progress" translatable="false">進行中的訂單</string>
+
+    <string name="order_number" translatable="false">訂單編號</string>
+    <string name="creation_date" translatable="false">創建日期</string>
+    <string name="founder" translatable="false">創建人</string>
+    <string name="user" translatable="false">客戶</string>
+    <string name="user_phone" translatable="false">客戶電話</string>
+    <string name="user_address" translatable="false">客戶地址</string>
+    <string name="supplier" translatable="false">供應商</string>
+    <string name="supplier_phone" translatable="false">供應商電話</string>
+    <string name="supplier_name" translatable="false">供應商名稱</string>
+    <string name="supplier_address" translatable="false">供應商地址</string>
+    <string name="supplier_num" translatable="false">供應商編號</string>
+    <string name="add_supplier" translatable="false">添加供應商</string>
+    <string name="supplier_category" translatable="false">供應商類別</string>
+    <string name="supply_category" translatable="false">供應類別</string>
+    <string name="purchase" translatable="false">採購成本</string>
+    <string name="sales_amount" translatable="false">銷售金額</string>
+    <string name="data_update_date" translatable="false">數據更新日期</string>
+    <string name="state" translatable="false">狀態</string>
+
+    <string name="purchasing_customers" translatable="false">採購客戶</string>
+    <string name="lump_sum" translatable="false">總金額</string>
+    <string name="profit" translatable="false">利潤</string>
+    <string name="estimated_delivery_date" translatable="false">預計收貨日期</string>
+    <string name="actual_date_of_receipt" translatable="false">實際收貨日期</string>
+    <string name="estimated_delivery_date1" translatable="false">預計送貨日期</string>
+    <string name="actual_delivery_date" translatable="false">實際送貨日期</string>
+    <string name="choose" translatable="false">請選擇</string>
+    <string name="enter" translatable="false">請輸入</string>
+    <string name="order_list" translatable="false">訂單列表</string>
+    <string name="harvest_date" translatable="false">收貨日期</string>
+    <string name="shipping_date" translatable="false">出貨日期</string>
+    <string name="create_order" translatable="false">創建訂單</string>
+
+    <string name="product_number" translatable="false">商品編號</string>
+    <string name="add_product_number" translatable="false">添加商品編號</string>
+    <string name="prize_name" translatable="false">商品名稱</string>
+    <string name="prize_desc" translatable="false">商品詳情</string>
+    <string name="unit_measurement" translatable="false">計量單位</string>
+    <string name="purchase_price" translatable="false">採購價格</string>
+    <string name="selling_price" translatable="false">銷售價格</string>
+    <string name="purchase_quantity" translatable="false">採購量</string>
+    <string name="cost" translatable="false">成本</string>
+    <string name="sellin_price" translatable="false">售價</string>
+    <string name="commodity_category" translatable="false">商品類別</string>
+    <string name="commodity_name" translatable="false">商品名稱</string>
+    <string name="commodity_list" translatable="false">商品列表</string>
+    <string name="commodity" translatable="false">商品</string>
+    <string name="search" translatable="false">搜尋</string>
+    <string name="create_commodity" translatable="false">創建商品</string>
+
+    <string name="order_desc" translatable="false">訂單詳情</string>
+    <string name="remark" translatable="false">備註</string>
+    <string name="total" translatable="false">總計</string>
+    <string name="all" translatable="false">全部</string>
+    <string name="supply_consulting" translatable="false">供應諮詢</string>
+    <string name="add_consulting" translatable="false">添加諮詢</string>
+    <string name="order_record" translatable="false">訂單記錄</string>
+    <string name="order_data" translatable="false">訂單日期</string>
+    <string name="order_num1" translatable="false">訂單數量</string>
+    <string name="data_up" translatable="false">數據更新日期</string>
+    <string name="pictures_remarks" translatable="false">圖片及備註</string>
+
+    <string name="buyer_management" translatable="false">買賣家管理</string>
+    <string name="management_number" translatable="false">買賣家編號</string>
+    <string name="management_name" translatable="false">買賣家名稱</string>
+    <string name="management_category" translatable="false">類別</string>
+    <string name="management_category1" translatable="false">買賣家類別</string>
+    <string name="contact_person" translatable="false">聯絡人</string>
+    <string name="phone" translatable="false">電話</string>
+    <string name="mail" translatable="false">電郵</string>
+    <string name="address" translatable="false">地址</string>
+    <string name="buyer_management_desc" translatable="false">買賣家管理詳情</string>
+    <string name="bank_name" translatable="false">銀行名稱</string>
+    <string name="bank_code" translatable="false">銀行代碼</string>
+    <string name="bank_acc" translatable="false">銀行賬號</string>
+
+    <string name="move" translatable="false">更多</string>
+
+</resources>

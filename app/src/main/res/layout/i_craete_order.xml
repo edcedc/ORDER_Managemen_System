@@ -44,7 +44,7 @@
             app:layout_constraintLeft_toLeftOf="@id/tv_product_num"
             app:layout_constraintTop_toBottomOf="@id/tv_product_num"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_marginTop="@dimen/px28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -64,7 +64,7 @@
             app:layout_constraintLeft_toLeftOf="@id/tv_product_num"
             app:layout_constraintTop_toBottomOf="@id/tv_prize_name"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_marginTop="@dimen/px28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -84,7 +84,7 @@
             app:layout_constraintLeft_toLeftOf="@id/tv_product_num"
             app:layout_constraintTop_toBottomOf="@id/tv_supplier"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_marginTop="@dimen/px28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -105,7 +105,7 @@
             app:layout_constraintLeft_toLeftOf="@id/tv_product_num"
             app:layout_constraintTop_toBottomOf="@id/tv_unit_measurement"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_marginTop="@dimen/px28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -129,7 +129,7 @@
             app:layout_constraintTop_toTopOf="@id/tv_selling_price1"
             app:layout_constraintBottom_toBottomOf="@id/tv_selling_price1"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -148,7 +148,7 @@
             app:layout_constraintLeft_toLeftOf="@id/tv_product_num"
             app:layout_constraintTop_toBottomOf="@id/tv_purchase_price"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_marginTop="@dimen/px28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -168,7 +168,7 @@
             app:layout_constraintLeft_toLeftOf="@id/tv_product_num"
             app:layout_constraintTop_toBottomOf="@id/tv_purchase_quantity"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_marginTop="@dimen/px28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -191,7 +191,7 @@
             app:layout_constraintBottom_toBottomOf="@id/tv_cost"
             app:layout_constraintLeft_toLeftOf="@id/tv_selling_price"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -220,7 +220,7 @@
             app:layout_constraintLeft_toLeftOf="@id/tv_product_num"
             app:layout_constraintTop_toBottomOf="@id/tv_cost"
             android:textSize="@dimen/px25"
-            android:textColor="@color/bar_grey"
+            android:textColor="@color/gray_999999"
             android:layout_marginTop="@dimen/px28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
