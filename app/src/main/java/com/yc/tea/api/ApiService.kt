@@ -25,7 +25,8 @@ interface ApiService{
 
     @GET("assetsList")
     fun getFirstHomeData(@Query("userid") num:String?= "CDA015922BC44391AA00C9AF8C2DF768", @Query("companyid") companyid:String? = "dbs"
-                         , @Query("assetno") assetno:String?= "", @Query("lastcalldate") lastcalldate:String?= ""):Observable<List<DataBean>>
+                 , @Query("assetno") assetno:String?= "", @Query("lastcalldate") lastcalldate:String?= ""):
+            Observable<List<DataBean>>
 
     @GET
     fun getIssueData1(@Url url: String): Observable<DataBean>

@@ -34,13 +34,7 @@ class AddSupplierFrg : BaseFragment(), AddSupplierContract.View {
         mPresenter.init(this)
 
         setRecyclerViewType(recyclerView = recyclerView)
-        recyclerView.addItemDecoration(
-            LinearDividerItemDecoration(
-                activity,
-                DividerItemDecoration.VERTICAL,
-                2
-            )
-        )
+        recyclerView.addItemDecoration(LinearDividerItemDecoration(activity,DividerItemDecoration.VERTICAL,2))
         recyclerView.adapter = adapter
         refreshLayout.autoRefresh()
         refreshLayout.setOnRefreshLoadMoreListener(object : OnRefreshLoadMoreListener {

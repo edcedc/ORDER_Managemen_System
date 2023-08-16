@@ -28,6 +28,7 @@ import kotlinx.android.synthetic.main.f_two.tv_state
 import kotlinx.android.synthetic.main.f_two.tv_supplier
 import kotlinx.android.synthetic.main.include_search.bt_move
 import kotlinx.android.synthetic.main.include_search.bt_sure
+import java.util.ArrayList
 
 /**
  * Created by Android Studio.

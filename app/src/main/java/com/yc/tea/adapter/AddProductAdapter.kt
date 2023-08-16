@@ -3,6 +3,7 @@ package com.yc.tea.adapter
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ListView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.widget.TextViewCompat
 import com.yc.tea.R
@@ -30,7 +31,7 @@ class AddProductAdapter (act: Context, root: BaseFragment, listBean: List<DataBe
         viewHolder.setText(R.id.tv_profit, "69%")
 
 
-        viewHolder.getView<AppCompatTextView>(R.id.tv_purchase_quantity).setOnClickListener {
+        viewHolder.getView<ListView>(R.id.listview).setOnItemClickListener { adapterView, view, i, l ->
 
         }
     }
